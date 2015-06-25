@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>TestaBygge</id>
+    <version>2015.06.25.1520</version>
+    <authors>Rikard</authors>
+    <owners>Rikard</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Testa bygge</description>
+    <releaseNotes>Skapat</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>bygge</tags>
+  </metadata>
+</package>

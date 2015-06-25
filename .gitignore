@@ -1,0 +1,5 @@
+*.key
+*.nupkg
+build/packages/
+*.sublime-project
+*.sublime-workspace
