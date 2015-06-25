@@ -24,9 +24,10 @@ Task CreateNugetPackage -Depends Clean {
 }
 
 Task PushNugetPackageToOctopusDeploy -Depends CreateNugetPackage {
-  Write-Host "Publish $octopus_package to $octo_serverUrl/nuget/packages"
   $nuget_exe = (Get-ChildItem "$build_script_dir\tools\NuGet.exe" | Select-Object -First 1)
   $octopus_package = (Get-ChildItem "$root_dir\*.nupkg" | Select-Object -Last 1)
+  
+  Write-Host "Publish $octopus_package to $octo_serverUrl/nuget/packages"
   Exec { &$nuget_exe push $octopus_package -ApiKey $octo_apiKey -Source $octo_serverUrl/nuget/packages }
 }
 
