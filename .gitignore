@@ -1,4 +1,3 @@
-*.key
 *.nupkg
 build/packages/
 *.sublime-project

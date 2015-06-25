@@ -5,8 +5,7 @@ Properties {
 	$root_dir = "$build_script_dir\.."
   $nuget_spec = Join-Path $root_dir "$project_name.nuspec"
   $designated_versionNumber = (Get-Date -format yyyy.MM.dd.HHmm).ToString()
-  # Annan nyckel!!!
-  $octo_apiKey = Get-Content("$build_script_dir\octokey.key")
+  $octo_apiKey = $env:OCTOKEY_LOCAL
   $octo_serverUrl = "http://localhost:8088"
 }
 
